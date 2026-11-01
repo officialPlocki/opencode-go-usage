@@ -1,0 +1,35 @@
+{
+  "name": "opencode-go-usage",
+  "version": "0.1.0",
+  "description": "Standalone OpenCode TUI plugin for Go limits and Console session spending.",
+  "type": "module",
+  "license": "MIT",
+  "exports": {
+    "./tui": "./src/tui.tsx"
+  },
+  "files": [
+    "src",
+    "README.md"
+  ],
+  "scripts": {
+    "typecheck": "tsc --noEmit -p tsconfig.json"
+  },
+  "dependencies": {
+    "@opencode/plugin": "^2.2.5"
+  },
+  "devDependencies": {
+    "@opentui/core": "^0.8.1",
+    "@opentui/solid": "^0.8.1",
+    "@types/node": "^24.0.0",
+    "solid-js": "^1.9.18",
+    "typescript": "^5.9.0"
+  },
+  "peerDependencies": {
+    "@opentui/core": ">=0.6.6",
+    "@opentui/solid": ">=0.6.6",
+    "solid-js": ">=1.9.0"
+  },
+  "engines": {
+    "node": ">=22.18"
+  }
+}
